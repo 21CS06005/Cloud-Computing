@@ -27,7 +27,7 @@ services:
     container_name: notes-service
     ports:
       - 40002:40002
-    network_mode: host
+#     network_mode: host
 #     hostname: localhost
 
 
@@ -41,5 +41,5 @@ services:
     container_name: notesdb
     ports:
       - 40003:40003
-    network_mode: host
-    hostname: localhost
+#     network_mode: host
+#     hostname: localhost
