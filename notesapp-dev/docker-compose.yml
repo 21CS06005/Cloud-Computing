@@ -11,7 +11,7 @@ services:
     ports:
       - 40001:40001
     network_mode: host
-    hostname: localhost
+#     hostname: localhost
 
   notes-service:
     build:
@@ -28,7 +28,7 @@ services:
     ports:
       - 40002:40002
     network_mode: host
-    hostname: localhost
+#     hostname: localhost
 
 
   mysql:
