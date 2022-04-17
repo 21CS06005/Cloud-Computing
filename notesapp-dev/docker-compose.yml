@@ -1,0 +1,45 @@
+version: '3'
+services:
+  notes-client:
+    build:
+      context: ./notes-client/notesapp
+      dockerfile: Dockerfile
+    depends_on: 
+      - notes-service
+    restart: always
+    container_name: notes-client
+    ports:
+      - 40001:40001
+    # network_mode: host
+    # hostname: localhost
+
+  notes-service:
+    build:
+      context: ./notes
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    restart: always
+    environment:
+      - mysql_username = root
+      - mysql_password = root
+      - mysql_dbname = ccassignment
+    container_name: notes-service
+    ports:
+      - 40002:40002
+    # network_mode: host
+    # hostname: localhost
+
+
+  mysql:
+    image: mysql:8
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_ROOT_USER=root
+      - MYSQL_DATABASE=ccassignment
+    container_name: notesdb
+    ports:
+      - 40003:40003
+    # network_mode: host
+    # hostname: localhost
