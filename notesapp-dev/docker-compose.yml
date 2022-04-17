@@ -21,8 +21,8 @@ services:
       - mysql
     restart: always
     environment:
-      - mysql_username=root
-      - mysql_password=root
+      - mysql_username=myuser
+      - mysql_password=password
       - mysql_dbname=ccassignment
     container_name: notes-service
     ports:
@@ -35,8 +35,8 @@ services:
     image: mysql:8
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_ROOT_USER=root
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_ROOT_USER=myuser
       - MYSQL_DATABASE=ccassignment
     container_name: notesdb
     ports:
