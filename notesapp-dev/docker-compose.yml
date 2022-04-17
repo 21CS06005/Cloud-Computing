@@ -10,8 +10,8 @@ services:
     container_name: notes-client
     ports:
       - 40001:40001
-    # network_mode: host
-    # hostname: localhost
+    network_mode: host
+    hostname: localhost
 
   notes-service:
     build:
@@ -27,8 +27,8 @@ services:
     container_name: notes-service
     ports:
       - 40002:40002
-    # network_mode: host
-    # hostname: localhost
+    network_mode: host
+    hostname: localhost
 
 
   mysql:
@@ -41,5 +41,5 @@ services:
     container_name: notesdb
     ports:
       - 40003:40003
-    # network_mode: host
-    # hostname: localhost
+    network_mode: host
+    hostname: localhost
