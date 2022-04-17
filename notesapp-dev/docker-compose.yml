@@ -1,17 +1,17 @@
 version: '3'
 services:
-  notes-client:
-    build:
-      context: ./notes-client/notesapp
-      dockerfile: Dockerfile
-    depends_on: 
-      - notes-service
-    restart: always
-    container_name: notes-client
-    ports:
-      - 40001:40001
-    # network_mode: host
-    # hostname: localhost
+#   notes-client:
+#     build:
+#       context: ./notes-client/notesapp
+#       dockerfile: Dockerfile
+#     depends_on: 
+#       - notes-service
+#     restart: always
+#     container_name: notes-client
+#     ports:
+#       - 40001:40001
+#     # network_mode: host
+#     # hostname: localhost
 
   notes-service:
     build:
