@@ -8,5 +8,5 @@ RUN npm run build
 
 # Stage 2
 
-EXPOSE 8001
+EXPOSE 4200
 CMD ["npm", "start"]
