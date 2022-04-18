@@ -9,7 +9,7 @@ services:
     restart: always
     container_name: notes-client
     ports:
-      - 8001:8001
+      - 4200:4200
     network_mode: host
     hostname: localhost
 
