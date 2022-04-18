@@ -25,6 +25,8 @@ services:
       - mysql_password=password
       - mysql_dbname=ccassignment
     container_name: notes-service
+    links:
+      - mysql
     ports:
       - 40002:40002
 #     network_mode: host
