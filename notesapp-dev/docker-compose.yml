@@ -1,4 +1,4 @@
-version: '3'
+version: '3.3'
 services:
 #   notes-client:
 #     build:
@@ -42,6 +42,6 @@ services:
       - MYSQL_DATABASE=ccassignment
     container_name: notesdbc
     ports:
-      - 8003:8003
+      - 3306:3306
     #network_mode: host
     #hostname: localhost
