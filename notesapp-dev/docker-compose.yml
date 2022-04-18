@@ -43,5 +43,5 @@ services:
     container_name: notesdbc
     ports:
       - 3306:3306
-    #network_mode: host
+    network_mode: host
     #hostname: localhost
