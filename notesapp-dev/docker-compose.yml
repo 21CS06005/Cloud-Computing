@@ -18,7 +18,7 @@ services:
       context: ./notes
       dockerfile: Dockerfile
     depends_on:
-      - mysql
+      - notesdb
     restart: always
     environment:
       - mysql_username=myuser
@@ -26,7 +26,7 @@ services:
       - mysql_dbname=ccassignment
     container_name: notes-service
     links:
-      - mysql
+      - notesdb
     ports:
       - 40002:40002
 #     network_mode: host
