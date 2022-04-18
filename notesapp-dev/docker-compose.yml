@@ -33,7 +33,7 @@ services:
 #     hostname: localhost
 
 
-  mysql:
+  notesdb:
     image: mysql:8
     restart: always
     environment:
