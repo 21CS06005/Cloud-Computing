@@ -12,7 +12,7 @@ export class NotesService {
     private http: HttpClient
   ) { }
 
-  serviceRoute = 'http://notes-service:40002/';
+  serviceRoute = 'http://localhost:8002/';
 
   
 
