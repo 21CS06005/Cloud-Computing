@@ -9,7 +9,7 @@ import { IUserLogin } from '../../model/IUserLogin';
 })
 export class AuthService {
 
-  serviceRoute = 'http://notes-service:40002/';
+  serviceRoute = 'http://localhost:8002/';
   constructor(
     private http: HttpClient
   ) { }
