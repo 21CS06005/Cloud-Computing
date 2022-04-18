@@ -44,4 +44,4 @@ services:
     ports:
       - 3306:3306
     network_mode: host
-    #hostname: localhost
+    hostname: localhost
